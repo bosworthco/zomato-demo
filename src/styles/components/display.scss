@@ -1,0 +1,48 @@
+// ========================
+// DISPLAY
+// ========================
+// @note: used to layout the application columns
+// ========================
+.Display {
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+// ========================
+// ELEMENTS
+// ========================
+.Display-results,
+.Display-listing {
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  flex-shrink: 0;
+}
+
+.Display-results {
+  background-color: $border;
+  margin: 0;
+  width: rem(560px);
+  padding: {
+    left: $h * 4;
+    right: $h * 4;
+  }
+}
+
+.Display-listing {
+  background-color: $off-white;
+  flex-grow: 1;
+}
+
+// .-anotherPart {}
+
+// ========================
+// MODIFIERS
+// ========================
+// .--modifier {}
+
+// ========================
+// UI STATES
+// ========================
+// ..is-active {}

@@ -1,0 +1,30 @@
+// ========================
+// HEADER
+// ========================
+// @note: Global header used at the top of the app for filtering
+// ========================
+.Header {
+  background-color: $white;
+  padding: {
+    top:    $v * 3;
+    bottom: $v * 3;
+    left:   $h * 4;
+    right:  $h * 4;
+  }
+}
+
+// ========================
+// ELEMENTS
+// ========================
+// .-part {}
+// .-anotherPart {}
+
+// ========================
+// MODIFIERS
+// ========================
+// .--modifier {}
+
+// ========================
+// UI STATES
+// ========================
+// ..is-active {}
