@@ -31,27 +31,20 @@
     // Note: Requires specific classes, see below.
     // ==========================================
 
-    html {
-      height: 100%;
-    }
-
-    body {
+    html, body, #root, .App {
       height: 100%;
       min-height: 100vh;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
+    }
+
+    .App {
       margin: 0;
       display: flex;
       flex-direction: column;
+      align-items: stretch;
+      justify-content: stretch;
     }
 
-    .Main {
-      flex-grow: 1;
-      flex-shrink: 0;
-    }
-
-    .Header,
-    .Footer {
+    .Header {
       flex: none;
     }
   } @else if $string == "fixed" {
