@@ -6,7 +6,7 @@ import {
   // Link
 } from "react-router-dom";
 import Home from 'pages/Home';
-import Styleguide from 'pages/Styleguide';
+import Typography from 'pages/Typography';
 
 import 'styles/app.scss';
 
@@ -18,7 +18,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/styleguide">
-          <Styleguide />
+          <Typography />
         </Route>
       </Switch>
     </Router>
