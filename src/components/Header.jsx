@@ -1,6 +1,23 @@
 import React, { Component } from 'react';
+import InputRange from 'react-input-range';
 
 class Header extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      rating: {
+        min: 1,
+        max: 4,
+      },
+      cost: {
+        min: 1,
+        max: 4,
+      },
+    };
+  }
+
   render() {
     return (
       <header className="Header">
@@ -108,7 +125,20 @@ class Header extends Component {
         </div>
         <div className="Header-ranges u-width1of3">
           <h6 className="u-width1of1 u-mB-sm">Rating</h6>
-          <h6 className="u-width1of1 u-mB-sm">Cost</h6>
+          <InputRange
+            maxValue={5}
+            minValue={0}
+            value={this.state.rating}
+            onChange={value => this.setState({ rating: value })}
+            onChangeComplete={value => console.log(value)} />
+
+          <h6 className="u-width1of1 u-mB-sm u-mT-lg">Cost</h6>
+          <InputRange
+            maxValue={4}
+            minValue={0}
+            value={this.state.cost}
+            onChange={value => this.setState({ cost: value })}
+            onChangeComplete={value => console.log(value)} />
         </div>
       </header>
     )

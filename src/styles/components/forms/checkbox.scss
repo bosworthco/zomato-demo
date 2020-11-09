@@ -56,7 +56,7 @@ $checkbox-size: 16px;
   color: transparent;
   width: $checkbox-size;
   height: $checkbox-size;
-  background-color: $border;
+  background-color: $form-element-disabled-color;
   // border: 3px solid $white;
   box-shadow: 0 0 0 1px $form-element-disabled-color;
   margin-right: $h / 2;
