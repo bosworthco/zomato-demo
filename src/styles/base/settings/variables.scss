@@ -14,8 +14,8 @@ $z-50: 50;
 // ============
 $form-element-height:          40px; // button, select
 $form-element-border-colour:   rgba($black, 0.25);
-$form-element-border-width:    2px;
-$form-element-border-radius:   3px;
-$form-element-focus-color:     $active;
-$form-element-disabled-color:  transparentize($grey-med, 0.5);
+$form-element-border-width:    1px;
+$form-element-border-radius:   0;
+$form-element-focus-color:     $blue;
+$form-element-disabled-color:  $border;
 $form-element-padding:         $h * 2;

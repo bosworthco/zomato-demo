@@ -32,7 +32,7 @@ $checkbox-size: 16px;
   display: inline-flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: $form-element-border-width;
+  padding-left: $form-element-border-width;
 }
 
 // say goodbye to the real input
@@ -56,24 +56,29 @@ $checkbox-size: 16px;
   color: transparent;
   width: $checkbox-size;
   height: $checkbox-size;
-  border: 3px solid $white;
+  background-color: $border;
+  // border: 3px solid $white;
   box-shadow: 0 0 0 1px $form-element-disabled-color;
   margin-right: $h / 2;
   margin-top: 3px;
-  border-radius: 2px;
+  border-radius: $form-element-border-radius;
+  transition: all 0.15s linear;
 }
 
 
 // ============
 // STATES
 // ============
+.Checkbox-input:hover + .Checkbox-label::before,
 .Checkbox-input:focus + .Checkbox-label::before {
+  // border: 3px solid $white;
   box-shadow: 0 0 0 $form-element-border-width $form-element-focus-color;
 }
 
 .Checkbox-input:checked + .Checkbox-label::before,
 .Checkbox-input.is-checked + .Checkbox-label::before {
-  color: $form-element-focus-color;
+  color: $white;
+  background-color: $form-element-focus-color;
   box-shadow: 0 0 0 $form-element-border-width $form-element-focus-color;
 }
 
