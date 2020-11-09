@@ -11,19 +11,19 @@ $input-range-disabled-color: $grey-med !default;
 
 // input-range-slider
 $input-range-slider-background: $off-white !default;
-$input-range-slider-border: 1px solid $input-range-primary-color !default;
+$input-range-slider-border: 2px solid $input-range-primary-color !default;
 $input-range-slider-focus-box-shadow-radius: 5px !default;
 $input-range-slider-focus-box-shadow-color: transparentize($input-range-slider-background, 0.8) !default;
 $input-range-slider-height: 1.875rem !default;
 $input-range-slider-width: 1.875rem !default;
-$input-range-slider-transition: transform 0.3s ease-out, box-shadow 0.3s ease-out !default;
-$input-range-slider-container-transition: left 0.3s ease-out !default;
-$input-range-slider-active-transform: scale(1.3) !default;
+$input-range-slider-transition: transform 0.15s ease-out, box-shadow 0.15s ease-out !default;
+$input-range-slider-container-transition: left 0.15s ease-out !default;
+$input-range-slider-active-transform: scale(1.1) !default;
 $input-range-slider-disabled-background: $input-range-disabled-color !default;
 $input-range-slider-disabled-border: 1px solid $input-range-disabled-color !default;
 
 // input-range-label
-$input-range-label-color: $text !default;
+$input-range-label-color: $text-light !default;
 $input-range-label-font-size: 0.8rem !default;
 $input-range-label-position-bottom: -1.4rem !default;
 $input-range-label-value-position-top: -1.8rem !default;
@@ -31,7 +31,7 @@ $input-range-label-value-position-top: -1.8rem !default;
 // input-range-track
 $input-range-track-background: $input-range-neutral-light-color !default;
 $input-range-track-height: 1.25rem !default;
-$input-range-track-transition: left 0.3s ease-out, width 0.3s ease-out !default;
+$input-range-track-transition: left 0.15s ease-out, width 0.15s ease-out !default;
 $input-range-track-active-background: $input-range-primary-color !default;
 $input-range-track-disabled-background: $input-range-neutral-light-color !default;
 
@@ -80,9 +80,8 @@ $input-range-track-disabled-background: $input-range-neutral-light-color !defaul
   transition: $input-range-slider-container-transition;
 }
 
-
 .input-range__label {
-  @extend %p;
+  @extend %label;
   margin-bottom: 0;
   color: $input-range-label-color;
   transform: translateZ(0);
