@@ -5,7 +5,7 @@ import Background from 'assets/urban-hero.webp';
 class Listing extends Component {
   render() {
     return (
-      <div className="Display-listing u-md-width2of3" tabindex="0">
+      <div className="Display-listing u-md-width2of3" tabIndex="0">
         <div className="Listing">
 
           <div className="Listing-image" style={{backgroundImage: `url(${Background})`}} />
