@@ -2,7 +2,7 @@ import React from 'react';
 
 const Results = () => {
   return (
-    <section className="Display-results u-width1of3">
+    <section className="Display-results u-md-width1of3">
 
       <nav className="Results" aria-labelledby="label_results">
         <h6 className="Results-title" id="label_results">Results</h6>

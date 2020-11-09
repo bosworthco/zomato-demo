@@ -4,15 +4,27 @@
 // @note: Used to display all the results returned from filters
 // ========================
 .Results {
-  margin-top: $v * 2;
+  margin-top: $v * 1.5;
+
+  @media #{$widescreen} {
+    margin-top: $v * 2;
+  }
 }
 
 // ========================
 // ELEMENTS
 // ========================
 .Results-title {
-  padding-left: $h * 4;
+  padding-left: $h;
   padding-right: $h;
+
+  @media #{$desktop} {
+    padding-left: $h * 2;
+  }
+
+  @media #{$widescreen} {
+    padding-left: $h * 4;
+  }
 }
 
 .Results-list {
@@ -31,14 +43,22 @@
   display: block;
   text-decoration: none;
   color: $text;
-  padding: {
-    left: $h * 4;
-    right: $h;
-    top: $v;
-    bottom: $v;
-  }
   margin-bottom: 0;
   transition: all 0.15s linear;
+  padding: {
+    left: $h;
+    right: $h;
+    top: $v / 1.5;
+    bottom: $v / 1.5;
+  }
+
+  @media #{$desktop} {
+    padding-left: $h * 2;
+  }
+
+  @media #{$widescreen} {
+    padding-left: $h * 4;
+  }
 }
 
 // ========================

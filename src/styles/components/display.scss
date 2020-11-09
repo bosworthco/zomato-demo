@@ -6,7 +6,9 @@
 .Display {
   display: flex;
   align-items: stretch;
+  flex-grow: 1;
   overflow: hidden;
+  position: relative;
 }
 
 // ========================
@@ -23,7 +25,13 @@
 .Display-results {
   background-color: $border;
   margin: 0;
-  width: rem(560px);
+  position: absolute;
+  box-shadow: 0 0 10px rgba($black, 0.15);
+
+  @media #{$tablet} {
+    position: static;
+    box-shadow: none;
+  }
 }
 
 .Display-listing {
@@ -31,14 +39,14 @@
   flex-grow: 1;
 }
 
-// .-anotherPart {}
+// .Display-anotherPart {}
 
 // ========================
 // MODIFIERS
 // ========================
-// .--modifier {}
+// .Display--modifier {}
 
 // ========================
 // UI STATES
 // ========================
-// ..is-active {}
+// .Display.is-active {}

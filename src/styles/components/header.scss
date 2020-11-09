@@ -5,14 +5,36 @@
 // ========================
 .Header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
   background-color: $white;
   padding: {
-    top:    $v * 2;
-    bottom: $v * 2;
-    left:   $h * 4;
-    right:  $h * 4;
+    top:    $v;
+    bottom: $v * 1.5;
+    left:   $h;
+    right:  $h;
+  }
+
+  @media #{$tablet} {
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  @media #{$desktop} {
+    padding: {
+      top:    $v * 1.5;
+      left:   $h * 2;
+      right:  $h * 2;
+    }
+  }
+
+  @media #{$widescreen} {
+    padding: {
+      top:    $v * 2;
+      bottom: $v * 2;
+      left:   $h * 4;
+      right:  $h * 4;
+    }
   }
 }
 
@@ -31,7 +53,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: $v / -2;
+  // margin-bottom: $v / -2;
 
   li {
     margin-bottom: $v / 2;
@@ -42,7 +64,12 @@
 // MODIFIERS
 // ========================
 .Header-filters-list--category {
-  li { width: 100%; }
+  li {
+    width: 100%;
+    @media #{$mobile-only} {
+      width: 33.333%;
+    }
+  }
 }
 
 .Header-filters-list--cuisine {
