@@ -126,8 +126,8 @@ $base-font-dimensions: (
   ),
   h6: (
     uppercase: true,
-    min-size: 16px,
-    max-size: 18px,
+    min-size: 14px,
+    max-size: 16px,
     min-breakpoint: $min-breakpoint,
     max-breakpoint: $max-breakpoint,
     line-height: 1.2,
@@ -136,13 +136,23 @@ $base-font-dimensions: (
     font-family: bold
   ),
   p: (
-    min-size: 16px,
-    max-size: 18px,
+    min-size: 14px,
+    max-size: 16px,
     min-breakpoint: $min-breakpoint,
     max-breakpoint: $max-breakpoint,
     line-height: 1.4,
     margin-top: 0px,
     margin-bottom: 24px,
     font-family: normal
+  ),
+  label: (
+    min-size: 12px,
+    max-size: 14px,
+    min-breakpoint: $min-breakpoint,
+    max-breakpoint: $max-breakpoint,
+    line-height: 1.4,
+    margin-top: 0px,
+    margin-bottom: 0px,
+    font-family: bold
   )
 );
