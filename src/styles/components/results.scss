@@ -1,0 +1,61 @@
+// ========================
+// RESULTS LIST
+// ========================
+// @note: Used to display all the results returned from filters
+// ========================
+.Results {
+  margin-top: $v * 2;
+}
+
+// ========================
+// ELEMENTS
+// ========================
+.Results-title {
+  padding-left: $h * 4;
+  padding-right: $h;
+}
+
+.Results-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 -1px 0 0 $grey-med;
+
+  li {
+    box-shadow: inset 0 -1px 0 0 rgba($black, 0.25);
+  }
+}
+
+.Results-list-link {
+  @extend %h5;
+  display: block;
+  text-decoration: none;
+  color: $text;
+  padding: {
+    left: $h * 4;
+    right: $h;
+    top: $v;
+    bottom: $v;
+  }
+  margin-bottom: 0;
+  transition: all 0.15s linear;
+}
+
+// ========================
+// MODIFIERS
+// ========================
+// .Results--modifier {}
+
+// ========================
+// UI STATES
+// ========================
+.Results-list-link:hover,
+.Results-list-link:focus {
+  color: $primary;
+  background-color: rgba($white, 0.25);
+}
+
+.Results-list-link.is-active {
+  color: $white;
+  background-color: $primary;
+}
