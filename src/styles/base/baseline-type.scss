@@ -1,5 +1,5 @@
 html {
-  @extend %font-medium !optional;
+  @extend %font-normal !optional;
   @include font($base-font-size);
   line-height: $base-line-height;
   color: $text;

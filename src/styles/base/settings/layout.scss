@@ -27,7 +27,7 @@ $h: $v;
 // ==========================================
 
 // Change to `false` for a fluid container.
-$fixed-breakpoints: true;
+$fixed-breakpoints: false;
 
 // Breakpoints must be defined in pixels, due to Chrome's
 // media-query rem always being 16px regardless of actual root em
