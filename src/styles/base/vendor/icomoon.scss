@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: 'icons';
-  src: url('/assets/glyphs/icons.woff') format('woff');
+  src: url('/assets/zomato-demo-glyphs.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,10 +34,10 @@
 
 /* stylelint-disable rule-empty-line-before, selector-pseudo-element-colon-notation */
 // === PASTE ICON CONTENT BELOW ===
-.icon-play:before {
-  content: "\e907";
+.icon-tick:before {
+  content: "\e906";
 }
-.icon-close:before {
-  content: "\e904";
+.icon-cross:before {
+  content: "\e900";
 }
 /* stylelint-enable rule-empty-line-before, selector-pseudo-element-colon-notation */
