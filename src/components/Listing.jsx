@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 
+import Background from 'assets/urban-hero.webp';
+
 class Listing extends Component {
   render() {
     return (
       <div className="Display-listing u-md-width2of3">
         <div className="Listing">
+
+          <div className="Listing-image" style={{backgroundImage: `url(${Background})`}} />
 
           <header className="Listing-header">
             <h1 className="h3 u-textBold u-mB-sm">Urban Oyster Bar &amp; Eatery</h1>

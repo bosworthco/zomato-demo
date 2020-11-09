@@ -41,6 +41,26 @@
 .Display-listing {
   background-color: $off-white;
   flex-grow: 1;
+  padding: {
+    top:    $v * 1.5;
+    bottom: $v * 1.5;
+    left:   $h;
+    right:  $h;
+  }
+
+  @media #{$desktop} {
+    padding: {
+      left:   $h * 2;
+      right:  $h * 2;
+    }
+  }
+
+  @media #{$widescreen} {
+    padding: {
+      top:    $v * 2;
+      bottom: $v * 2;
+    }
+  }
 }
 
 // .Display-anotherPart {}
