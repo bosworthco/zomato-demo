@@ -1,0 +1,91 @@
+// ========================
+// LISTING
+// ========================
+// @note: Where we display the restaurant information
+// ========================
+.Listing {
+  padding: {
+    top:    $v * 1.5;
+    bottom: $v * 1.5;
+    left:   $h;
+    right:  $h;
+  }
+
+  @media #{$desktop} {
+    padding: {
+      left:   $h * 2;
+      right:  $h * 2;
+    }
+  }
+
+  @media #{$widescreen} {
+    padding: {
+      top:    $v * 2;
+      bottom: $v * 2;
+      left:   $h * 4;
+      right:  $h * 4;
+    }
+  }
+}
+
+// ========================
+// ELEMENTS
+// ========================
+// .Listing-header {}
+
+.Listing-features {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: $v * 2;
+  padding: 0;
+}
+
+.Listing-features-item {
+  @extend %h5 !optional;
+  position: relative;
+  padding-left: $h * 2;
+  margin-bottom: $v / 2;
+
+  &::before {
+    @extend %icon !optional;
+    @include font(30px);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.Listing-hours-status {
+  @extend %h6 !optional;
+  margin: 0;
+  color: $white;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+// ========================
+// MODIFIERS
+// ========================
+.Listing-features-item[data-available="true"]::before {
+  @extend .icon-tick:before !optional;
+  color: $green;
+}
+
+.Listing-features-item[data-available="false"]::before {
+  @extend .icon-cross:before !optional;
+  color: $red;
+}
+
+.Listing-hours-status[data-open="true"] {
+  background-color: $green;
+}
+
+.Listing-hours-status[data-open="false"] {
+  background-color: $red;
+}
+
+// ========================
+// UI STATES
+// ========================
+// .Listing.is-active {}

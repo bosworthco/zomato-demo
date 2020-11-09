@@ -56,15 +56,6 @@
   user-select: none;
 }
 
-
-// ============
-// Font weights
-// ============
-.u-textLight { @extend %font-light !optional; }
-.u-textMedium { @extend %font-light !optional; }
-.u-textBold { @extend %font-heading !optional; }
-
-
 // ============
 // Font colours
 // ============

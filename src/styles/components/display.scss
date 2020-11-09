@@ -19,13 +19,17 @@
   height: 100%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  flex-shrink: 0;
+
+  @media #{$tablet} {
+    flex-shrink: 0;
+  }
 }
 
 .Display-results {
   background-color: $border;
   margin: 0;
   position: absolute;
+  z-index: 1;
   box-shadow: 0 0 10px rgba($black, 0.15);
 
   @media #{$tablet} {
